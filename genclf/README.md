@@ -11,7 +11,7 @@ pip install genclf
 ```python
 >>> from genclf import GenderClassifier
 >>> g = GenderClassifier()
->>> g.name = 'Jess'
+>>> g.name = 'Barack'
 >>> g.predict()
 ```
 
