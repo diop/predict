@@ -46,3 +46,16 @@ class GenderClassifier(object):
             print('Please chose a model [nb:naiveBayes, logistic:logisticRegression]')
 
         return gender_clf
+
+    def classify(self, new_name):
+        self.name = new_name
+        result = self.predict()
+        return result
+
+    def is_female(self, new_name):
+        self.name = new_name
+        return self.predict() == 'female'
+
+    def is_male(self, new_name):
+        self.name = new_name
+        return self.predict() == 'male'
