@@ -35,3 +35,14 @@ class GenderClassifier(object):
 
         return result
 
+    def load(self, model_type):
+        if model_type == 'nb':
+            gender_nb_model = open(os.path.join(PACKAGE_DIR, 'models/gender_naive_bayes_model.pkl'), 'rb')
+            gender_clf = joblib.load(gender_nb_model)
+        elif model_type == 'logistic':
+            gender_logistic_model = open(os.path.join(PACKAGE_DIR, 'models/gender_logistic_model.pkl'), 'rb')
+            gender_clf = joblib.load(gender_logistic_model)
+        else:
+            print('Please chose a model [nb:naiveBayes, logistic:logisticRegression]')
+
+        return gender_clf
