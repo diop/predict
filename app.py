@@ -69,9 +69,9 @@ async def process_sms(From: str = Form(...), Body: str = Form(...)):
     else:
         result = 'Male'
 
-    response.message(result)
+    print(result)
 
-    print(response)
+    response.message(result)
 
     return Response(content=str(response), media_type="application/xml")
     
