@@ -1,7 +1,7 @@
 ![Predict](images/cover.png)
 
-# Predict
-Twilio 2020 Hackathon
+# Twilio Hackathon 2020 - Predict
+![Screenshot](images/screenshot.png)
 
 ## About
 Predict allows you to simply text a person's first name to a Twilio number and get back their gender i.e Male or Female
