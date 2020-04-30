@@ -58,6 +58,15 @@ async def predict(name):
 
 @app.post('/hook')
 async def process_sms(From: str = Form(...), Body: str = Form(...)):
+    validator = RequestValidator(os.environ["TWILIO_AUTH_TOKEN"])
+    form_ = await request.form()
+    if not validator.validate(
+        str(request.url), 
+        form_, 
+        request.headers.get("X-Twilio-Signature", "")
+    ):
+        raise HTTPException(status_code=400, detail="Error in Twilio Signature")
+
     response = MessagingResponse()
 
     print(Body)
