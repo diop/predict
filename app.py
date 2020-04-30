@@ -58,7 +58,7 @@ async def predict(name):
     return {"Given name": name, "Prediction": result}
 
 @app.post('/hook')
-async def process_sms(From: str = Form(...), Body: str = Form(...)):
+async def process_sms(request: Request, From: str = Form(...), Body: str = Form(...)):
     validator = RequestValidator(os.environ["TWILIO_AUTH_TOKEN"])
     form_ = await request.form()
     if not validator.validate(
