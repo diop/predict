@@ -1,9 +1,10 @@
 import dotenv
 import uvicorn
 import os, joblib
-from fastapi import FastAPI, Form, Response
+from fastapi import FastAPI, Form, Response, HTTPException
 from twilio.rest import Client
 from twilio.twiml.messaging_response import MessagingResponse
+from twilio.request_validator import RequestValidator
 
 dotenv.load_dotenv('.env')
 
