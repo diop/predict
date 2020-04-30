@@ -6,12 +6,21 @@ Twilio 2020 Hackathon
 ## About
 Predict allows you to simply text a person's first name to a Twilio number and get back their gender i.e Male or Female
 
+## Example
++ Web --> [https://twilio-predict.herokuapp.com/predict/michelle](https://twilio-predict.herokuapp.com/predict/michelle)
++ SMS --> [https://twilio-predict.herokuapp.com/hook](https://twilio-predict.herokuapp.com/hook)
+
 ### Software Requirement
 + Python 3.7 or later
 + [FastAPI](https://fastapi.tiangolo.com/)
 + [scikit-learn](https://scikit-learn.org/stable/)
 + [Jupyter Notebook](https://jupyter.org/)
 + A Twilio account - [sign up](https://www.twilio.com/try-twilio)
+
+### API Documentation
++ [FastAPI](https://twilio-predict.herokuapp.com/redoc)
++ [Swagger](https://twilio-predict.herokuapp.com/docs)
+
 
 ### Setup Python Env
 ```
