@@ -10,7 +10,7 @@ Jinja2==2.11.2
 joblib==0.14.1
 MarkupSafe==1.1.1
 numpy==1.18.3
-pydantic==1.5.1
+pydantic==1.6.2
 PyJWT==1.7.1
 python-dotenv==0.13.0
 python-multipart==0.0.5
