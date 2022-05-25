@@ -11,7 +11,7 @@ joblib==0.14.1
 MarkupSafe==1.1.1
 numpy==1.18.3
 pydantic==1.5.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 python-dotenv==0.13.0
 python-multipart==0.0.5
 pytz==2020.1
